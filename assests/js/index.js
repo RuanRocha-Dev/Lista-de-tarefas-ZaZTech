@@ -1,6 +1,6 @@
 let input = document.querySelector("#input-new-task");
 const btn = document.querySelector(".btn");
-const low = document.querySelector("#low-priority");
+let low = document.querySelector("#low-priority");
 const normal = document.querySelector("#normal-priority");
 const high = document.querySelector("#high-priority ");
 const select = document.querySelector("select");
@@ -42,12 +42,22 @@ function createBtnStatus(li) {
     const btnStatus = document.createElement("select");
     btn.setAttribute("class", "status");
     const btnLow = document.createElement("option");
+    btnLow.value = "pending";
     btnStatus.appendChild(btnLow).textContent = "Pendente";
     const btnNormal = document.createElement("option");
+    btnNormal.value = "progress";
     btnStatus.appendChild(btnNormal).textContent = "Em andamento";
     const btnHigh = document.createElement("option");
+    btnHigh.value = "concluded";
     btnStatus.appendChild(btnHigh).textContent = "Concluido";
     li.appendChild(btnStatus);
+    btnStatus.addEventListener("click", () => {
+        if(btnStatus.value === "pending") {
+            li.style.color = "#ff0b0b";
+        }
+        btnStatus.value === "progress" ? li.style.color = "#dff708" : "";
+        btnStatus.value === "concluded" ? li.style.color = "#129e05" : "";
+    })
 }
 
 function personAttached(valor) {
@@ -66,7 +76,7 @@ function createTask(textoInput) {
     btnSwitchOff(li);
     createBtnStatus(li);
     li.appendChild(personAttached(person.value));
-    clearInput();
+    clearInput(); 
 }
 
 btn.addEventListener("click", function () {

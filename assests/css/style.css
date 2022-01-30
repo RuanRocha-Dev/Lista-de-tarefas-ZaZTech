@@ -89,6 +89,7 @@ section h2{
 
 section ul h3{
     text-align: center;
+    font-size: 1.4em;
 }
 
 .li{
@@ -97,6 +98,8 @@ section ul h3{
     justify-content: space-evenly;
     margin-top: 15px;
     letter-spacing: .1em;
+    font-weight:bolder;
+    color: #ff0b0b;
 }
 
 button{
