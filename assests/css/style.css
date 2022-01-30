@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.container{
+    background-color: rgb(196, 196, 196);
+    width: 70%;
+    margin: 100px auto;
+    padding: 20px;
+    font-size: 1.2em;
+    border: 5px solid #FE783F;
+    border-radius: 20px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 250px;
+    margin-left: 20px;
+    
+}
+
+#start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.assignment, .priority, .attached-person{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: center;
+}
+
+input, select{
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    font-size: .9em;
+}
+
+select{
+    cursor: pointer;
+}
+
+#uls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#uls ul{
+    margin-top: 50px;
+}
+
+section ul{
+    width: 100%;
+    padding: 20px;
+}
+
+section h2{
+    text-align: center;
+    border-bottom: 3px solid #000;
+    font-size: 2em;
+}
+
+section ul h3{
+    text-align: center;
+}
+
+.li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    letter-spacing: .1em;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(92, 92, 92);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(254,119,63);
+    color: #fff;
+}
+
+footer{
+    font-size: .8em;
+}

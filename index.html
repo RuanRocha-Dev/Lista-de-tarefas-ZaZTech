@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <title>Lista de tarefas ZAZtech</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="h1">Lista de tarefas <img src="https://www.zaztech.com.br/wp-content/uploads/2021/03/Sem-Titulo-1.png" alt=""></h1>
+        <section id="start">
+            <div class="assignment">
+                <label for="input-new-task">Nome da tarefa</label>
+                <input type="text" id="input-new-task">
+            </div>
+            <div class="priority">
+                <label for="select">selecione a prioridade da tarefa</label>
+                <select name="select">
+                    <option value="low">Baixa</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="high">Alta</option>
+                </select>
+            </div>
+            <div class="attached-person">
+                <label for="attached-person">Pessoa em anéxo</label>
+                <input type="text" id="attached-person">
+            </div>
+            <button class="btn">Adicionar</button>
+        </section>
+        <section id="uls">
+            <h2> Prioridade </h2>
+            <ul id="low-priority">
+                <h3>Baixa:</h3>
+            </ul>
+            <ul id="normal-priority">
+                <h3>Normal:</h3>
+            </ul>
+            <ul id="high-priority">
+                <h3>Alta:</h3>
+            </ul>
+        </section>
+        <footer> *clique na terefa para edita-la </footer>
+    </main>
+    <script src="./assests/js/index.js"></script>
+</body>
+</html>
